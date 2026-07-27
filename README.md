@@ -1,9 +1,8 @@
-# 🪖 AI-Powered Helmet Detection & Rider Safety Monitoring System
+# 🪖 AI-Based Helmet Detection & Rider Safety Monitoring System
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
 ![YOLO](https://img.shields.io/badge/Ultralytics-YOLOv8-00FFFF?logo=yolo&logoColor=black)
 ![OpenCV](https://img.shields.io/badge/OpenCV-Webcam%20Inference-5C3EE8?logo=opencv&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
 
 A real-time computer vision demo that detects whether a rider is wearing a helmet from a **live webcam**, then **simulates vehicle speed control**: full speed when a helmet is confirmed, limited speed when it is not.
@@ -26,6 +25,15 @@ When no head box is found, an OpenCV **Haar face cascade** marks faces as `face/
 > **Input supported:** live webcam (`VideoCapture(0)` only). Image-file and video-file modes are not implemented.
 
 ---
+
+## Test Demo Images
+
+![Helmet detected](assets/Test%20with%20helmet.png)
+
+![No helmet detected](assets/test%20without%20helmet.png)
+
+---
+
 
 ## ✨ Key Features
 
@@ -99,7 +107,6 @@ YOLO head detector  (models/head_detector_best.pt)
 | Motor driver | Speed logic in code |
 | DC motor | On-screen `Speed: XX km/h` |
 
-More detail: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ---
 
@@ -306,8 +313,8 @@ These are **not** implemented today:
 
 **Athithiyan T**
 
-- GitHub: [`@your-username`](https://github.com/<your-username>)
-- LinkedIn: [`your-profile`](https://www.linkedin.com/in/<your-profile>)
+- GitHub: [`@Athithiyan-T`](https://github.com/<Athithiyan-T>)
+- LinkedIn: [`athithiyan17`](https://www.linkedin.com/in/<athithiyan17>)
 
 ---
 
