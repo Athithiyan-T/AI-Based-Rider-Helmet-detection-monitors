@@ -46,7 +46,7 @@ predictions/
 wandb/
 
 # Review / training dataset (not required for inference demo)
-dataset/
+# dataset/
 
 # Model weights outside models/ (keep packaged inference weights)
 *.pt
