@@ -1,0 +1,58 @@
+PROJECT: Vision Based Helmet Detection Using Raspberry Pi (Software Simulation)
+
+DATASET USED:
+PROJECT_REVIEW_DATASET_archive_2.zip
+
+SOURCE:
+Roboflow YOLOv8 dataset export
+Dataset name in README: aryan_1
+Images: 942
+Annotation format: YOLOv8 bounding box labels
+
+ORIGINAL CLASSES IN DATASET:
+0 - numberPlate
+1 - faceWithNoHelmet
+2 - faceWithGoodHelmet
+3 - faceWithBadHelmet
+4 - rider
+
+CLASSES USED IN THIS PROJECT:
+faceWithGoodHelmet -> helmet
+faceWithNoHelmet -> no_helmet
+faceWithBadHelmet -> no_helmet
+
+IGNORED CLASSES:
+numberPlate
+rider
+
+PREPARED DATASET FOLDERS (training history; optional local review images):
+bike_head_detect_dataset
+  - Used to train head/helmet area detector
+
+bike_helmet_classify_dataset
+  - Used to train helmet vs no_helmet classifier
+
+OPTIONAL LOCAL REVIEW IMAGES (gitignored; not required to run the demo):
+dataset/separate_helmet_dataset/with_helmet
+dataset/separate_helmet_dataset/without_helmet
+
+TRAINED MODEL FILES (shipped in this repository):
+models/head_detector_best.pt
+models/helmet_classifier_best.pt
+
+Historical training output paths (not included in this package):
+runs/detect/runs/detect/bike_head_detector/weights/best.pt
+runs/classify/runs/classify/bike_helmet_classifier/weights/best.pt
+
+MAIN PYTHON ENTRY POINT:
+helmet_detection_speed_control.py
+
+RUN COMMAND:
+python helmet_detection_speed_control.py
+
+Or on Windows:
+RUN_DEMO.bat
+
+OUTPUT LOGIC:
+Helmet detected -> Full speed allowed -> 60 km/h
+Helmet not detected / face only -> Speed limited -> 25 km/h
